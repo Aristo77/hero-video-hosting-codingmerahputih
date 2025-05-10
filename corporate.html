@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coding Merah Putih — AI Bootcamp</title>
+  <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/Aristo77/hero-video-hosting-codingmerahputih/main/logo.ico">
+
+  <link rel="stylesheet" href="style.css">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body class="page-corporate">
+
+
+  <!-- Header -->
+  <header class="cmp-header">
+    <div class="container">
+     
+
+      <div class="cmp-header-mobile">
+  <div class="logo">
+    <img src="https://raw.githubusercontent.com/Aristo77/hero-video-hosting-codingmerahputih/main/logo.png" alt="Logo Coding Merah Putih">
+  </div>
+  <button class="hamburger" id="menuToggle">&#9776;</button>
+</div>
+
+<nav class="cmp-nav" id="mainMenu">
+  <ul>
+    <li><a href="about.html">About</a></li>
+    <li class="dropdown">
+      <a href="#">Programs ▾</a>
+      <ul class="dropdown-menu">
+        <li><a href="#">Full-Stack Web Development</a></li>
+        <li><a href="#">AI Engineering</a></li>
+        <li><a href="#">Animation with AI</a></li>
+        <li><a href="#">Digital Marketing with AI</a></li>
+      </ul>
+    </li>
+    <li><a href="#">Blogging</a></li>
+    <li><a href="#">Corporate</a></li>
+    <li><a href="#">Contact</a></li>
+   
+  </ul>
+</nav>
+
+      <div class="cmp-actions">
+        <button class="btn-outline">Masuk</button>
+        <button class="btn-primary">Daftar</button>
+      </div>
+    </div>
+  </header>
+    
+   <section class="cmp-hero page-corporate-hero">
+  <div class="container corporate-hero-center">
+    <div class="corporate-hero-text">
+      <h1>
+        Optimalkan potensi karyawan Anda di bidang <span>Data Science</span>, Digital Marketing, Software Development, UI/UX Design, Visual Design dan Product Management.
+      </h1>
+
+      <div class="hero-tags">
+        <span>100+ perusahaan</span>
+        <span>36 tahun pengalaman</span>
+        <span>50+ courses</span>
+      </div>
+
+      <p>
+        telah memercayakan pelatihan karyawan di Purwadhika<br>
+        pengalaman di dalam dunia pendidikan teknologi digital<br>
+        pilihan program pendidikan digital terlengkap dengan kurikulum terdepan
+      </p>
+    </div>
+  </div>
+</section>
+    
+<section class="cmp-video-section">
+  <div class="container corporate-video-center">
+    <div class="video-wrapper">
+      <video autoplay muted loop playsinline class="hero-video">
+        <source src="videos/corporate.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </div>
+</section>
+
+
+
+
+  
+  
+  
+
+  
+
+  
+ 
+<footer class="cmp-footer">
+  <div class="container">
+    <p>&copy; Coding Merah Putih 2025</p>
+  </div>
+</footer>
+    
+    <script>
+  const menuToggle = document.getElementById('menuToggle');
+  const mainMenu = document.getElementById('mainMenu');
+  const dropdown = document.querySelector('.dropdown');
+
+  menuToggle.addEventListener('click', () => {
+    mainMenu.classList.toggle('show');
+  });
+
+  // Mobile dropdown toggle
+  dropdown.addEventListener('click', (e) => {
+    e.stopPropagation(); // prevent closing menu immediately
+    dropdown.classList.toggle('open');
+  });
+</script>
+
+
+</body>
+</html>
